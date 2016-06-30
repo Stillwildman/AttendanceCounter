@@ -14,13 +14,13 @@ public class Utility {
     }
 
     public static void setTextColorByCount(int count, TextView textView) {
-        if (count < 5)
+        if (count < 6)
             textView.setTextColor(ContextCompat.getColor(AppController.getInstance().getAppContext(), R.color.md_black_1000));
 
-        if (count >= 5)
+        if (count >= 6)
             textView.setTextColor(ContextCompat.getColor(AppController.getInstance().getAppContext(), R.color.md_amber_700));
 
-        if (count >= 9)
+        if (count >= 10)
             textView.setTextColor(ContextCompat.getColor(AppController.getInstance().getAppContext(), R.color.md_red_600));
     }
 
