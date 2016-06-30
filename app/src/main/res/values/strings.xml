@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">AttendanceCounter</string>
+    <string name="total_counts">Total Counts: %1$d\n(Males: %2$d\t\tFemales: %3$d)</string>
+    <string name="total_counts_land">Total\nCounts:\n%1$d\nMales:\n%2$d\nFemales:\n%3$d</string>
+</resources>

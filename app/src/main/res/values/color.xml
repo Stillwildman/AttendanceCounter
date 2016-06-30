@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Common Colors -->
+    <color name="white">#FFFFFF</color>
+    <!-- <color name="gray">#AAAAAA</color>  -->
+    <color name="gray">#838383</color>
+    <color name="yellow">#FFCC00</color>
+    <color name="red">#ff0033</color>
+    <color name="dim_gray">#696969</color>
+    <color name="black">#000000</color>
+    <color name="blue">#0000FF</color>
+    <!-- <color name="deep_blue">#394856</color>  -->
+    <color name="deep_blue">#384857</color>
+    <color name="little_deep_blue">#4990B4</color>
+    <color name="cyan">#55FDFF</color>
+    <color name="pink">#DF7C88</color>
+    <color name="orange">#EA6D07</color>
+    <color name="light_blue">#5797B7</color>
+    <color name="crystal">#ff0092f4</color>
+    <color name="crystal_light">#33bee5</color>
+    <color name="Beige">#F5F5DC</color>
+    <color name="Tan">#D2B48C</color>
+    <color name="AliceBlue">#F0F8FF</color>
+
+    <color name="dark_gray">#CACACA</color>
+    <color name="light_gray">#DBDBDB</color>
+
+    <color name="home_bg_status_bar_color">#4D9ACC</color>
+    <color name="tab_layout_color">#021E57</color>
+
+    <!-- Transparent Colors -->
+    <color name="transparent_half_white">#4FFFFFFF</color>
+    <color name="transparent_quarter_white">#AFFFFFFF</color>
+    <color name="transparent_little_white">#D8FFFFFF</color>
+    <color name="transparent_half_gray">#4F838383</color>
+    <color name="transparent_more_gray">#9F838383</color>
+    <color name="transparent_quarter_gray">#CFE0E0E0</color>
+    <color name="transparent_little_black">#1F000000</color>
+    <color name="transparent_half_black">#4F000000</color>
+    <color name="transparent_quarter_black">#AF000000</color>
+    <color name="transparent_deep_blue">#EF384857</color>
+    <color name="transparent_crystal_light">#4F33BEE5</color>
+    <color name="transparent_crystal">#3F0092f4</color>
+
+    <!-- Ivy Required -->
+    <color name="common_background_color">#F3F3F3</color>
+    <color name="common_text_color">#0E0E0E</color>
+    <color name="common_title_color">#7E7E80</color>
+    <color name="common_subtitle_color">#747479</color>
+    <color name="poi_toolbar_color">#136A6F</color>
+    <color name="transit_toolbar_color">#F4A929</color>
+    <color name="transit_train_info_background">#AA9A8B</color>
+    <color name="parking_common_color">#074E7E</color>
+    <color name="switch_tab_off">#757472</color>
+    <color name="switch_tab_on">#F4A929</color>
+    <color name="airport_terminal_1">#F0D6B0</color>
+    <color name="airport_terminal_2">#ECE3D5</color>
+    <color name="route_toolbar_color">#8B1D64</color>
+    <color name="route_button_off">#8B1D64</color>
+    <color name="route_button_on">#66174E</color>
+    <color name="bus_common_color">#724B22</color>
+    <color name="bus_upcoming_time">#C7383C</color>
+    <color name="bus_button_on">#5B391B</color>
+    <color name="taxi_common_color">#D0611E</color>
+    <color name="ebike_toolbar_color">#B74622</color>
+    <color name="tab_layout_toolbar_color">#00324D</color>
+    <color name="road_speed_name_bar">#349DA0</color>
+    <color name="traffic_status_good">#00FF00</color>
+    <color name="traffic_status_medium">#FFFF00</color>
+    <color name="traffic_status_slow">#FF9933</color>
+    <color name="traffic_status_jam">#FF0000</color>
+    <color name="bicycle_common_color">#419cd3</color>
+
+</resources>

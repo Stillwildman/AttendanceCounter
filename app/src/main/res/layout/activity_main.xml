@@ -1,0 +1,563 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.brack.attendancecounter.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/text_totalCounts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/padding_size_l"
+            android:layout_marginStart="@dimen/padding_size_l"
+            android:layout_marginTop="@dimen/padding_size_m"
+            android:layout_marginBottom="@dimen/padding_size_m"
+            android:layout_toLeftOf="@+id/btn_lock"
+            android:layout_toStartOf="@+id/btn_lock"
+            android:layout_centerVertical="true"
+            android:text="@string/total_counts"
+            android:textSize="@dimen/font_text_size_m"
+            android:textColor="@color/md_grey_800"
+            android:textStyle="bold"/>
+
+        <ImageButton
+            android:id="@+id/btn_lock"
+            android:layout_width="wrap_content"
+            android:layout_height="75dp"
+            android:padding="@dimen/padding_size_m"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_lock_on"
+            android:scaleType="centerInside"
+            android:background="@drawable/background_common_button_2"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/md_grey_900" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:src="@drawable/flag_usa"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/btn_male_usa"
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:padding="@dimen/padding_size_m"
+                        android:src="@drawable/icon_male"
+                        android:scaleType="centerInside"
+                        android:background="@drawable/background_male_button"/>
+
+                    <TextView
+                        android:id="@+id/total_count_male_usa"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/btn_male_usa"
+                        android:layout_marginTop="@dimen/padding_size_m"
+                        android:layout_marginBottom="@dimen/padding_size_l"
+                        android:gravity="center"
+                        android:text="000"
+                        android:textSize="@dimen/font_text_size_xl"
+                        android:textColor="@color/md_grey_900"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/count_male_usa"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@+id/total_count_male_usa"
+                        android:layout_above="@+id/btn_minus_male_usa"
+                        android:gravity="center_horizontal"
+                        android:text="000000"
+                        android:textSize="@dimen/font_text_size_xl"/>
+
+                    <ImageButton
+                        android:id="@+id/btn_minus_male_usa"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:layout_alignParentBottom="true"
+                        android:src="@drawable/ic_remove"
+                        android:scaleType="centerInside"
+                        android:background="@drawable/background_common_button"/>
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/md_grey_900" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/btn_female_usa"
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:padding="@dimen/padding_size_m"
+                        android:src="@drawable/icon_female"
+                        android:scaleType="centerInside"
+                        android:background="@drawable/background_female_button"/>
+
+                    <TextView
+                        android:id="@+id/total_count_female_usa"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/btn_female_usa"
+                        android:layout_marginTop="@dimen/padding_size_m"
+                        android:layout_marginBottom="@dimen/padding_size_l"
+                        android:gravity="center"
+                        android:text="000"
+                        android:textSize="@dimen/font_text_size_xl"
+                        android:textColor="@color/md_grey_900"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/count_female_usa"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@+id/total_count_female_usa"
+                        android:layout_above="@+id/btn_minus_female_usa"
+                        android:gravity="center_horizontal"
+                        android:text="000000"
+                        android:textSize="@dimen/font_text_size_xl"/>
+
+                    <ImageButton
+                        android:id="@+id/btn_minus_female_usa"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:layout_alignParentBottom="true"
+                        android:src="@drawable/ic_remove"
+                        android:scaleType="centerInside"
+                        android:background="@drawable/background_common_button"/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/md_grey_900" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:src="@drawable/flag_japan"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/btn_male_japan"
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:padding="@dimen/padding_size_m"
+                        android:src="@drawable/icon_male"
+                        android:scaleType="centerInside"
+                        android:background="@drawable/background_male_button"/>
+
+                    <TextView
+                        android:id="@+id/total_count_male_japan"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/btn_male_japan"
+                        android:layout_marginTop="@dimen/padding_size_m"
+                        android:layout_marginBottom="@dimen/padding_size_l"
+                        android:gravity="center"
+                        android:text="000"
+                        android:textSize="@dimen/font_text_size_xl"
+                        android:textColor="@color/md_grey_900"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/count_male_japan"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@+id/total_count_male_japan"
+                        android:layout_above="@+id/btn_minus_male_japan"
+                        android:gravity="center_horizontal"
+                        android:text="000000"
+                        android:textSize="@dimen/font_text_size_xl"/>
+
+                    <ImageButton
+                        android:id="@+id/btn_minus_male_japan"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:layout_alignParentBottom="true"
+                        android:src="@drawable/ic_remove"
+                        android:scaleType="centerInside"
+                        android:background="@drawable/background_common_button"/>
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/md_grey_900" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/btn_female_japan"
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:padding="@dimen/padding_size_m"
+                        android:src="@drawable/icon_female"
+                        android:scaleType="centerInside"
+                        android:background="@drawable/background_female_button"/>
+
+                    <TextView
+                        android:id="@+id/total_count_female_japan"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/btn_female_japan"
+                        android:layout_marginTop="@dimen/padding_size_m"
+                        android:layout_marginBottom="@dimen/padding_size_l"
+                        android:gravity="center"
+                        android:text="000"
+                        android:textSize="@dimen/font_text_size_xl"
+                        android:textColor="@color/md_grey_900"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/count_female_japan"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@+id/total_count_female_japan"
+                        android:layout_above="@+id/btn_minus_female_japan"
+                        android:gravity="center_horizontal"
+                        android:text="000000"
+                        android:textSize="@dimen/font_text_size_xl"/>
+
+                    <ImageButton
+                        android:id="@+id/btn_minus_female_japan"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:layout_alignParentBottom="true"
+                        android:src="@drawable/ic_remove"
+                        android:scaleType="centerInside"
+                        android:background="@drawable/background_common_button"/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/md_grey_900" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:src="@drawable/flag_united_kingdom"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/btn_male_uk"
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:padding="@dimen/padding_size_m"
+                        android:src="@drawable/icon_male"
+                        android:scaleType="centerInside"
+                        android:background="@drawable/background_male_button"/>
+
+                    <TextView
+                        android:id="@+id/total_count_male_uk"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/btn_male_uk"
+                        android:layout_marginTop="@dimen/padding_size_m"
+                        android:layout_marginBottom="@dimen/padding_size_l"
+                        android:gravity="center"
+                        android:text="000"
+                        android:textSize="@dimen/font_text_size_xl"
+                        android:textColor="@color/md_grey_900"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/count_male_uk"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@+id/total_count_male_uk"
+                        android:layout_above="@+id/btn_minus_male_uk"
+                        android:gravity="center_horizontal"
+                        android:text="000000"
+                        android:textSize="@dimen/font_text_size_xl"/>
+
+                    <ImageButton
+                        android:id="@+id/btn_minus_male_uk"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:layout_alignParentBottom="true"
+                        android:src="@drawable/ic_remove"
+                        android:scaleType="centerInside"
+                        android:background="@drawable/background_common_button"/>
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/md_grey_900" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/btn_female_uk"
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:padding="@dimen/padding_size_m"
+                        android:src="@drawable/icon_female"
+                        android:scaleType="centerInside"
+                        android:background="@drawable/background_female_button"/>
+
+                    <TextView
+                        android:id="@+id/total_count_female_uk"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/btn_female_uk"
+                        android:layout_marginTop="@dimen/padding_size_m"
+                        android:layout_marginBottom="@dimen/padding_size_l"
+                        android:gravity="center"
+                        android:text="000"
+                        android:textSize="@dimen/font_text_size_xl"
+                        android:textColor="@color/md_grey_900"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/count_female_uk"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@+id/total_count_female_uk"
+                        android:layout_above="@+id/btn_minus_female_uk"
+                        android:gravity="center_horizontal"
+                        android:text="000000"
+                        android:textSize="@dimen/font_text_size_xl"/>
+
+                    <ImageButton
+                        android:id="@+id/btn_minus_female_uk"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:layout_alignParentBottom="true"
+                        android:src="@drawable/ic_remove"
+                        android:scaleType="centerInside"
+                        android:background="@drawable/background_common_button"/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/md_grey_900" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:src="@drawable/flag_france"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/btn_male_france"
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:padding="@dimen/padding_size_m"
+                        android:src="@drawable/icon_male"
+                        android:scaleType="centerInside"
+                        android:background="@drawable/background_male_button"/>
+
+                    <TextView
+                        android:id="@+id/total_count_male_france"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/btn_male_france"
+                        android:layout_marginTop="@dimen/padding_size_m"
+                        android:layout_marginBottom="@dimen/padding_size_l"
+                        android:gravity="center"
+                        android:text="000"
+                        android:textSize="@dimen/font_text_size_xl"
+                        android:textColor="@color/md_grey_900"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/count_male_france"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@+id/total_count_male_france"
+                        android:layout_above="@+id/btn_minus_male_france"
+                        android:gravity="center_horizontal"
+                        android:text="000000"
+                        android:textSize="@dimen/font_text_size_xl"/>
+
+                    <ImageButton
+                        android:id="@+id/btn_minus_male_france"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:layout_alignParentBottom="true"
+                        android:src="@drawable/ic_remove"
+                        android:scaleType="centerInside"
+                        android:background="@drawable/background_common_button"/>
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/md_grey_900" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/btn_female_france"
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:padding="@dimen/padding_size_m"
+                        android:src="@drawable/icon_female"
+                        android:scaleType="centerInside"
+                        android:background="@drawable/background_female_button"/>
+
+                    <TextView
+                        android:id="@+id/total_count_female_france"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/btn_female_france"
+                        android:layout_marginTop="@dimen/padding_size_m"
+                        android:layout_marginBottom="@dimen/padding_size_l"
+                        android:gravity="center"
+                        android:text="000"
+                        android:textSize="@dimen/font_text_size_xl"
+                        android:textColor="@color/md_grey_900"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/count_female_france"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@+id/total_count_female_france"
+                        android:layout_above="@+id/btn_minus_female_france"
+                        android:gravity="center_horizontal"
+                        android:text="000000"
+                        android:textSize="@dimen/font_text_size_xl"/>
+
+                    <ImageButton
+                        android:id="@+id/btn_minus_female_france"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:layout_alignParentBottom="true"
+                        android:src="@drawable/ic_remove"
+                        android:scaleType="centerInside"
+                        android:background="@drawable/background_common_button"/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
