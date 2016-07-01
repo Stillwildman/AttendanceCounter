@@ -199,7 +199,7 @@
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="150dp"
-                android:src="@drawable/flag_japan"/>
+                android:src="@drawable/flag_singapore"/>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -213,7 +213,7 @@
                     android:orientation="vertical">
 
                     <ImageButton
-                        android:id="@+id/btn_male_japan"
+                        android:id="@+id/btn_male_singapore"
                         android:layout_width="match_parent"
                         android:layout_height="120dp"
                         android:padding="@dimen/padding_size_m"
@@ -222,10 +222,10 @@
                         android:background="@drawable/background_male_button"/>
 
                     <TextView
-                        android:id="@+id/total_count_male_japan"
+                        android:id="@+id/total_count_male_singapore"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_below="@+id/btn_male_japan"
+                        android:layout_below="@+id/btn_male_singapore"
                         android:layout_marginTop="@dimen/padding_size_m"
                         android:layout_marginBottom="@dimen/padding_size_l"
                         android:gravity="center"
@@ -237,11 +237,11 @@
                     <ScrollView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:layout_below="@+id/total_count_male_japan"
-                        android:layout_above="@+id/btn_minus_male_japan">
+                        android:layout_below="@+id/total_count_male_singapore"
+                        android:layout_above="@+id/btn_minus_male_singapore">
 
                         <TextView
-                            android:id="@+id/count_male_japan"
+                            android:id="@+id/count_male_singapore"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:gravity="center_horizontal"
@@ -251,7 +251,7 @@
                     </ScrollView>
 
                     <ImageButton
-                        android:id="@+id/btn_minus_male_japan"
+                        android:id="@+id/btn_minus_male_singapore"
                         android:layout_width="match_parent"
                         android:layout_height="80dp"
                         android:layout_alignParentBottom="true"
@@ -273,7 +273,7 @@
                     android:orientation="vertical">
 
                     <ImageButton
-                        android:id="@+id/btn_female_japan"
+                        android:id="@+id/btn_female_singapore"
                         android:layout_width="match_parent"
                         android:layout_height="120dp"
                         android:padding="@dimen/padding_size_m"
@@ -282,10 +282,10 @@
                         android:background="@drawable/background_female_button"/>
 
                     <TextView
-                        android:id="@+id/total_count_female_japan"
+                        android:id="@+id/total_count_female_singapore"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_below="@+id/btn_female_japan"
+                        android:layout_below="@+id/btn_female_singapore"
                         android:layout_marginTop="@dimen/padding_size_m"
                         android:layout_marginBottom="@dimen/padding_size_l"
                         android:gravity="center"
@@ -297,11 +297,11 @@
                     <ScrollView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:layout_below="@+id/total_count_female_japan"
-                        android:layout_above="@+id/btn_minus_female_japan">
+                        android:layout_below="@+id/total_count_female_singapore"
+                        android:layout_above="@+id/btn_minus_female_singapore">
 
                         <TextView
-                            android:id="@+id/count_female_japan"
+                            android:id="@+id/count_female_singapore"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:gravity="center_horizontal"
@@ -311,7 +311,7 @@
                     </ScrollView>
 
                     <ImageButton
-                        android:id="@+id/btn_minus_female_japan"
+                        android:id="@+id/btn_minus_female_singapore"
                         android:layout_width="match_parent"
                         android:layout_height="80dp"
                         android:layout_alignParentBottom="true"

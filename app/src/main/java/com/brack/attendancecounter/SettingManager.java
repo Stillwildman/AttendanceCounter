@@ -14,8 +14,8 @@ public class SettingManager {
 
     private static final String PREF_TOTAL_COUNTS_MALE_TAIWAN = "TotalCountMaleUSA";
     private static final String PREF_TOTAL_COUNTS_FEMALE_USA = "TotalCountFemaleUSA";
-    private static final String PREF_TOTAL_COUNTS_MALE_JAPAN = "TotalCountMaleJapan";
-    private static final String PREF_TOTAL_COUNTS_FEMALE_JAPAN = "TotalCountFemaleJapan";
+    private static final String PREF_TOTAL_COUNTS_MALE_SINGAPORE = "TotalCountMaleSingapore";
+    private static final String PREF_TOTAL_COUNTS_FEMALE_SINGAPORE = "TotalCountFemaleSingapore";
     private static final String PREF_TOTAL_COUNTS_MALE_UK = "TotalCountMaleUK";
     private static final String PREF_TOTAL_COUNTS_FEMALE_UK = "TotalCountFemaleUK";
     private static final String PREF_TOTAL_COUNTS_MALE_FRANCE = "TotalCountMaleFrance";
@@ -57,20 +57,20 @@ public class SettingManager {
         return prefs.getInt(PREF_TOTAL_COUNTS_FEMALE_USA, 0);
     }
 
-    public static void setTotalCountMaleJapan(int counts) {
-        editor.putInt(PREF_TOTAL_COUNTS_MALE_JAPAN, counts).apply();
+    public static void setTotalCountMaleSingapore(int counts) {
+        editor.putInt(PREF_TOTAL_COUNTS_MALE_SINGAPORE, counts).apply();
     }
 
-    public static int getTotalCountMaleJapan() {
-        return prefs.getInt(PREF_TOTAL_COUNTS_MALE_JAPAN, 0);
+    public static int getTotalCountMaleSingapore() {
+        return prefs.getInt(PREF_TOTAL_COUNTS_MALE_SINGAPORE, 0);
     }
 
-    public static void setTotalCountFemaleJapan(int counts) {
-        editor.putInt(PREF_TOTAL_COUNTS_FEMALE_JAPAN, counts).apply();
+    public static void setTotalCountFemaleSingapore(int counts) {
+        editor.putInt(PREF_TOTAL_COUNTS_FEMALE_SINGAPORE, counts).apply();
     }
 
-    public static int getTotalCountFemaleJapan() {
-        return prefs.getInt(PREF_TOTAL_COUNTS_FEMALE_JAPAN, 0);
+    public static int getTotalCountFemaleSingapore() {
+        return prefs.getInt(PREF_TOTAL_COUNTS_FEMALE_SINGAPORE, 0);
     }
 
     public static void setTotalCountMaleUK(int counts) {

@@ -10,8 +10,8 @@ public class MainActivity extends AppCompatActivity {
 
     private ImageButton btn_male_usa;
     private ImageButton btn_female_usa;
-    private ImageButton btn_male_japan;
-    private ImageButton btn_female_japan;
+    private ImageButton btn_male_singapore;
+    private ImageButton btn_female_singapore;
     private ImageButton btn_male_uk;
     private ImageButton btn_female_uk;
     private ImageButton btn_male_france;
@@ -19,8 +19,8 @@ public class MainActivity extends AppCompatActivity {
     
     private TextView totalCount_male_usa;
     private TextView totalCount_female_usa;
-    private TextView totalCount_male_japan;
-    private TextView totalCount_female_japan;
+    private TextView totalCount_male_singapore;
+    private TextView totalCount_female_singapore;
     private TextView totalCount_male_uk;
     private TextView totalCount_female_uk;
     private TextView totalCount_male_france;
@@ -28,8 +28,8 @@ public class MainActivity extends AppCompatActivity {
     
     private TextView count_male_usa;
     private TextView count_female_usa;
-    private TextView count_male_japan;
-    private TextView count_female_japan;
+    private TextView count_male_singapore;
+    private TextView count_female_singapore;
     private TextView count_male_uk;
     private TextView count_female_uk;
     private TextView count_male_france;
@@ -37,8 +37,8 @@ public class MainActivity extends AppCompatActivity {
     
     private ImageButton btn_minus_male_usa;
     private ImageButton btn_minus_female_usa;
-    private ImageButton btn_minus_male_japan;
-    private ImageButton btn_minus_female_japan;
+    private ImageButton btn_minus_male_singapore;
+    private ImageButton btn_minus_female_singapore;
     private ImageButton btn_minus_male_uk;
     private ImageButton btn_minus_female_uk;
     private ImageButton btn_minus_male_france;
@@ -46,8 +46,8 @@ public class MainActivity extends AppCompatActivity {
 
     private int counts_male_usa;
     private int counts_female_usa;
-    private int counts_male_japan;
-    private int counts_female_japan;
+    private int counts_male_singapore;
+    private int counts_female_singapore;
     private int counts_male_uk;
     private int counts_female_uk;
     private int counts_male_france;
@@ -72,8 +72,8 @@ public class MainActivity extends AppCompatActivity {
     private void findViews() {
         btn_male_usa = (ImageButton) findViewById(R.id.btn_male_usa);
         btn_female_usa = (ImageButton) findViewById(R.id.btn_female_usa);
-        btn_male_japan = (ImageButton) findViewById(R.id.btn_male_japan);
-        btn_female_japan = (ImageButton) findViewById(R.id.btn_female_japan);
+        btn_male_singapore = (ImageButton) findViewById(R.id.btn_male_singapore);
+        btn_female_singapore = (ImageButton) findViewById(R.id.btn_female_singapore);
         btn_male_uk = (ImageButton) findViewById(R.id.btn_male_uk);
         btn_female_uk = (ImageButton) findViewById(R.id.btn_female_uk);
         btn_male_france = (ImageButton) findViewById(R.id.btn_male_france);
@@ -81,8 +81,8 @@ public class MainActivity extends AppCompatActivity {
 
         totalCount_male_usa = (TextView) findViewById(R.id.total_count_male_usa);
         totalCount_female_usa = (TextView) findViewById(R.id.total_count_female_usa);
-        totalCount_male_japan = (TextView) findViewById(R.id.total_count_male_japan);
-        totalCount_female_japan = (TextView) findViewById(R.id.total_count_female_japan);
+        totalCount_male_singapore = (TextView) findViewById(R.id.total_count_male_singapore);
+        totalCount_female_singapore = (TextView) findViewById(R.id.total_count_female_singapore);
         totalCount_male_uk = (TextView) findViewById(R.id.total_count_male_uk);
         totalCount_female_uk = (TextView) findViewById(R.id.total_count_female_uk);
         totalCount_male_france = (TextView) findViewById(R.id.total_count_male_france);
@@ -90,8 +90,8 @@ public class MainActivity extends AppCompatActivity {
 
         count_male_usa = (TextView) findViewById(R.id.count_male_usa);
         count_female_usa = (TextView) findViewById(R.id.count_female_usa);
-        count_male_japan = (TextView) findViewById(R.id.count_male_japan);
-        count_female_japan = (TextView) findViewById(R.id.count_female_japan);
+        count_male_singapore = (TextView) findViewById(R.id.count_male_singapore);
+        count_female_singapore = (TextView) findViewById(R.id.count_female_singapore);
         count_male_uk = (TextView) findViewById(R.id.count_male_uk);
         count_female_uk = (TextView) findViewById(R.id.count_female_uk);
         count_male_france = (TextView) findViewById(R.id.count_male_france);
@@ -99,8 +99,8 @@ public class MainActivity extends AppCompatActivity {
 
         btn_minus_male_usa = (ImageButton) findViewById(R.id.btn_minus_male_usa);
         btn_minus_female_usa = (ImageButton) findViewById(R.id.btn_minus_female_usa);
-        btn_minus_male_japan = (ImageButton) findViewById(R.id.btn_minus_male_japan);
-        btn_minus_female_japan = (ImageButton) findViewById(R.id.btn_minus_female_japan);
+        btn_minus_male_singapore = (ImageButton) findViewById(R.id.btn_minus_male_singapore);
+        btn_minus_female_singapore = (ImageButton) findViewById(R.id.btn_minus_female_singapore);
         btn_minus_male_uk = (ImageButton) findViewById(R.id.btn_minus_male_uk);
         btn_minus_female_uk = (ImageButton) findViewById(R.id.btn_minus_female_uk);
         btn_minus_male_france = (ImageButton) findViewById(R.id.btn_minus_male_france);
@@ -125,17 +125,17 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        btn_male_japan.setOnClickListener(new View.OnClickListener() {
+        btn_male_singapore.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                increaseMaleJapanCounts();
+                increaseMaleSingaporeCounts();
             }
         });
 
-        btn_female_japan.setOnClickListener(new View.OnClickListener() {
+        btn_female_singapore.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                increaseFemaleJapanCounts();
+                increaseFemaleSingaporeCounts();
             }
         });
 
@@ -181,17 +181,17 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        btn_minus_male_japan.setOnClickListener(new View.OnClickListener() {
+        btn_minus_male_singapore.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                decreaseMaleJapanCounts();
+                decreaseMaleSingaporeCounts();
             }
         });
 
-        btn_minus_female_japan.setOnClickListener(new View.OnClickListener() {
+        btn_minus_female_singapore.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                decreaseFemaleJapanCounts();
+                decreaseFemaleSingaporeCounts();
             }
         });
 
@@ -235,8 +235,8 @@ public class MainActivity extends AppCompatActivity {
     private void setDefaultValues() {
         counts_male_usa = SettingManager.getTotalCountMaleUSA();
         counts_female_usa = SettingManager.getTotalCountFemaleUSA();
-        counts_male_japan = SettingManager.getTotalCountMaleJapan();
-        counts_female_japan = SettingManager.getTotalCountFemaleJapan();
+        counts_male_singapore = SettingManager.getTotalCountMaleSingapore();
+        counts_female_singapore = SettingManager.getTotalCountFemaleSingapore();
         counts_male_uk = SettingManager.getTotalCountMaleUK();
         counts_female_uk = SettingManager.getTotalCountFemaleUK();
         counts_male_france = SettingManager.getTotalCountMaleFrance();
@@ -244,8 +244,8 @@ public class MainActivity extends AppCompatActivity {
 
         totalCount_male_usa.setText(String.valueOf(counts_male_usa));
         totalCount_female_usa.setText(String.valueOf(counts_female_usa));
-        totalCount_male_japan.setText(String.valueOf(counts_male_japan));
-        totalCount_female_japan.setText(String.valueOf(counts_female_japan));
+        totalCount_male_singapore.setText(String.valueOf(counts_male_singapore));
+        totalCount_female_singapore.setText(String.valueOf(counts_female_singapore));
         totalCount_male_uk.setText(String.valueOf(counts_male_uk));
         totalCount_female_uk.setText(String.valueOf(counts_female_uk));
         totalCount_male_france.setText(String.valueOf(counts_male_france));
@@ -258,8 +258,8 @@ public class MainActivity extends AppCompatActivity {
 
         setMaleUSACounts();
         setFemaleUSACounts();
-        setMaleJapanCounts();
-        setFemaleJapanCounts();
+        setMaleSingaporeCounts();
+        setFemaleSingaporeCounts();
         setMaleUKCounts();
         setFemaleUKCounts();
         setMaleFranceCounts();
@@ -346,80 +346,80 @@ public class MainActivity extends AppCompatActivity {
         Utility.setTextColorByCount(counts_female_usa, count_female_usa);
     }
 
-    /** Japan Male */
+    /** Singapore Male */
 
-    private void increaseMaleJapanCounts() {
-        counts_male_japan++;
-        SettingManager.setTotalCountMaleJapan(counts_male_japan);
-        setMaleJapanCounts();
+    private void increaseMaleSingaporeCounts() {
+        counts_male_singapore++;
+        SettingManager.setTotalCountMaleSingapore(counts_male_singapore);
+        setMaleSingaporeCounts();
         setTotalCounts();
     }
 
-    private void decreaseMaleJapanCounts() {
-        if (counts_male_japan != 0) {
-            counts_male_japan--;
-            SettingManager.setTotalCountMaleJapan(counts_male_japan);
-            setMaleJapanCounts();
+    private void decreaseMaleSingaporeCounts() {
+        if (counts_male_singapore != 0) {
+            counts_male_singapore--;
+            SettingManager.setTotalCountMaleSingapore(counts_male_singapore);
+            setMaleSingaporeCounts();
             setTotalCounts();
         }
     }
 
-    private void setMaleJapanCounts() {
-        totalCount_male_japan.setText(String.valueOf(counts_male_japan));
-        count_male_japan.setText("");
+    private void setMaleSingaporeCounts() {
+        totalCount_male_singapore.setText(String.valueOf(counts_male_singapore));
+        count_male_singapore.setText("");
 
         StringBuilder sb = new StringBuilder();
 
-        for (int i = 0; i < counts_male_japan; i++) {
+        for (int i = 0; i < counts_male_singapore; i++) {
             sb.append("|\t");
 
-            count_male_japan.setText(sb.toString());
+            count_male_singapore.setText(sb.toString());
 
             if (Utility.isDivisibleByFive(i + 1)) {
                 sb.replace(sb.indexOf("|"), sb.lastIndexOf("\t") + 1, textFive);
-                count_male_japan.setText(sb.toString());
+                count_male_singapore.setText(sb.toString());
             }
         }
 
-        Utility.setTextColorByCount(counts_male_japan, count_male_japan);
+        Utility.setTextColorByCount(counts_male_singapore, count_male_singapore);
     }
 
-    /** Japan Female */
+    /** Singapore Female */
 
-    private void increaseFemaleJapanCounts() {
-        counts_female_japan++;
-        SettingManager.setTotalCountFemaleJapan(counts_female_japan);
-        setFemaleJapanCounts();
+    private void increaseFemaleSingaporeCounts() {
+        counts_female_singapore++;
+        SettingManager.setTotalCountFemaleSingapore(counts_female_singapore);
+        setFemaleSingaporeCounts();
         setTotalCounts();
     }
 
-    private void decreaseFemaleJapanCounts() {
-        if (counts_female_japan != 0) {
-            counts_female_japan--;
-            SettingManager.setTotalCountFemaleJapan(counts_female_japan);
-            setFemaleJapanCounts();
+    private void decreaseFemaleSingaporeCounts() {
+        if (counts_female_singapore != 0) {
+            counts_female_singapore--;
+            SettingManager.setTotalCountFemaleSingapore(counts_female_singapore);
+            setFemaleSingaporeCounts();
             setTotalCounts();
         }
     }
 
-    private void setFemaleJapanCounts() {
-        totalCount_female_japan.setText(String.valueOf(counts_female_japan));
-        count_female_japan.setText("");
+    private void setFemaleSingaporeCounts() {
+        totalCount_female_singapore.setText(String.valueOf(counts_female_singapore));
+        count_female_singapore.setText("");
 
         StringBuilder sb = new StringBuilder();
 
-        for (int i = 0; i < counts_female_japan; i++) {
+        for (int i = 0; i < counts_female_singapore; i++) {
             sb.append("|\t");
 
-            count_female_japan.setText(sb.toString());
+            count_female_singapore.setText(sb.toString());
 
             if (Utility.isDivisibleByFive(i + 1)) {
                 sb.replace(sb.indexOf("|"), sb.lastIndexOf("\t") + 1, textFive);
-                count_female_japan.setText(sb.toString());
+                count_female_singapore.setText(sb.toString());
             }
         }
 
-        Utility.setTextColorByCount(counts_female_japan, count_female_japan);
+        Utility.setTextColorByCount(counts_female_singapore, count_female_singapore);
     }
 
     /** UK Male */
@@ -578,12 +578,12 @@ public class MainActivity extends AppCompatActivity {
 
     private void setTotalCounts() {
         int totalCounts = counts_male_usa + counts_female_usa +
-                counts_male_japan + counts_female_japan +
+                counts_male_singapore + counts_female_singapore +
                 counts_male_uk + counts_female_uk +
                 counts_male_france + counts_female_france;
 
-        int maleCounts = counts_male_usa + counts_male_japan + counts_male_uk + counts_male_france;
-        int femaleCounts = counts_female_usa + counts_female_japan + counts_female_uk + counts_female_france;
+        int maleCounts = counts_male_usa + counts_male_singapore + counts_male_uk + counts_male_france;
+        int femaleCounts = counts_female_usa + counts_female_singapore + counts_female_uk + counts_female_france;
 
         if (Utility.isPortrait())
             text_totalCounts.setText(getString(R.string.total_counts, totalCounts, maleCounts, femaleCounts));
@@ -594,8 +594,8 @@ public class MainActivity extends AppCompatActivity {
     private void setAllButtonEnable(boolean enable) {
         btn_male_usa.setEnabled(enable);
         btn_female_usa.setEnabled(enable);
-        btn_male_japan.setEnabled(enable);
-        btn_female_japan.setEnabled(enable);
+        btn_male_singapore.setEnabled(enable);
+        btn_female_singapore.setEnabled(enable);
         btn_male_uk.setEnabled(enable);
         btn_female_uk.setEnabled(enable);
         btn_male_france.setEnabled(enable);
@@ -603,8 +603,8 @@ public class MainActivity extends AppCompatActivity {
 
         btn_minus_male_usa.setEnabled(enable);
         btn_minus_female_usa.setEnabled(enable);
-        btn_minus_male_japan.setEnabled(enable);
-        btn_minus_female_japan.setEnabled(enable);
+        btn_minus_male_singapore.setEnabled(enable);
+        btn_minus_female_singapore.setEnabled(enable);
         btn_minus_male_uk.setEnabled(enable);
         btn_minus_female_uk.setEnabled(enable);
         btn_minus_male_france.setEnabled(enable);
